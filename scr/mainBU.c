@@ -13902,7 +13902,6 @@ int main(void)
 
 
 //	check_tmp_record();	//开机检测flash里面有没有记录，有的话回写 并打开文件	
-	
 	MSG_LOG("flash大小:%d\r\n",ugflash_capacity);
 	
 //	check_free_flash(5);	//确保剩余5M空间
@@ -13913,11 +13912,7 @@ int main(void)
 // 	find_BLK_QR(irda_rxBuf,irda_rxBuf,0);//送0  为了取一下版本而已
 // 	QR_BLK_Ver = get_QR_blkVer();
 // #endif
-	
-
-
-
-	SysParInit();
+  SysParInit();
 	restore_flag = 3;
 	
 #ifdef qPBOC_BUS
